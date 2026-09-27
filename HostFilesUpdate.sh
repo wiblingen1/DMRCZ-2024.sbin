@@ -100,7 +100,7 @@ do
 done
 
 # Generate Host Files
-curl --fail -o ${APRSHOSTS} -s http://www.pistar.uk/downloads/APRS_Hosts.txt --user-agent "Pi-Star_${pistarCurVersion}"
+curl --fail -o ${APRSHOSTS} -s http://barrandovhblink.jednoduse.cz/dmrcz/APRS_Hosts.txt --user-agent "Pi-Star_${pistarCurVersion}"
 curl --fail -o ${DCSHOSTS} -s http://www.pistar.uk/downloads/DCS_Hosts.txt --user-agent "Pi-Star_${pistarCurVersion}"
 curl --fail -o ${DMRHOSTS} -s http://barrandovhblink.jednoduse.cz/dmrcz/DMR_Hosts.txt --user-agent "Pi-Star_${pistarCurVersion}"
 if [ -f /etc/hostfiles.nodextra ]; then
